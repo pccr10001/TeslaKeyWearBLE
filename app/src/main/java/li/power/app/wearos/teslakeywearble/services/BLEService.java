@@ -1311,7 +1311,7 @@ public class BLEService extends Service {
     /**
      * Get Session
      */
-    private SessionManager.Session getSession(String vehicleId, UniversalMessage.Domain domain) {
+    private synchronized SessionManager.Session getSession(String vehicleId, UniversalMessage.Domain domain) {
         Map<UniversalMessage.Domain, SessionManager.Session> sessions = vehicleSessions.get(vehicleId);
         return sessions != null ? sessions.get(domain) : null;
     }
@@ -1611,7 +1611,7 @@ public class BLEService extends Service {
     /**
      * Update connection status and notify
      */
-    private void updateConnectionStatus(String status) {
+    private synchronized void updateConnectionStatus(String status) {
         this.connectionStatus = status;
         Log.d(TAG, "Connection status changed: " + status + " (Vehicle: " + currentVehicleId + ")");
 
