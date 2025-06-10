@@ -1,0 +1,251 @@
+<resources>
+    <string name="app_name">TeslaKeyWearBLE</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">From the Square world,\nHello, %1$s!</string>
+
+    <string name="keystoreFailed">Failed to initialize keystore.</string>
+    <string name="keypairFailed">Failed to generate keypair.</string>
+    
+    <!-- VCSECPairingService strings -->
+    <string name="pairing_already_in_progress">Pairing already in progress</string>
+    <string name="bluetooth_not_available">Bluetooth not available</string>
+    <string name="device_not_found">Device not found</string>
+    <string name="permission_error">Permission error</string>
+    <string name="connecting_to_vehicle">Connecting to vehicle...</string>
+    <string name="discovering_services">Discovering services...</string>
+    <string name="generating_public_key">Generating public key...</string>
+    <string name="creating_pairing_request">Creating pairing request...</string>
+    <string name="sending_pairing_request">Sending pairing request to vehicle...</string>
+    <string name="waiting_for_vehicle_response">Waiting for vehicle response...</string>
+    <string name="setting_up_vehicle_notification">Setting up vehicle notification...</string>
+    <string name="starting_vcsec_handshake">Starting VCSEC handshake...</string>
+    <string name="please_tap_key_card">Please tap key card on vehicle reader</string>
+    <string name="key_card_confirmed">Key card confirmed successfully</string>
+    <string name="pairing_success_completed">Pairing successfully completed</string>
+    <string name="write_characteristic_failed">Write characteristic failed</string>
+    <string name="read_characteristic_failed">Read characteristic failed</string>
+    <string name="connection_disconnected">Connection disconnected</string>
+    <string name="service_discovery_failed">Service discovery failed</string>
+    <string name="tesla_vcsec_service_not_found">Tesla VCSEC service not found</string>
+    <string name="required_characteristics_not_found">Required characteristics not found</string>
+    <string name="notification_setup_failed">Notification setup failed</string>
+    <string name="descriptor_write_failed">Descriptor write failed</string>
+    <string name="indication_activation_failed">Indication activation failed</string>
+    <string name="insufficient_response_data">Insufficient response data</string>
+    <string name="response_length_mismatch">Response data length mismatch</string>
+    <string name="response_processing_failed">Response processing failed: %1$s</string>
+    <string name="key_processing_error">Key processing error: %1$s</string>
+    <string name="command_execution_failed">Command execution failed: %1$s</string>
+    <string name="pairing_stopped">Pairing process stopped</string>
+    <string name="wakelock_acquired">WakeLock acquired, preventing screen dimming</string>
+    <string name="wakelock_released">WakeLock released, allowing screen dimming</string>
+    <string name="wakelock_acquire_failed">Failed to acquire WakeLock</string>
+    <string name="wakelock_release_failed">Failed to release WakeLock</string>
+    <string name="service_discovery_success">Discovering services...</string>
+    <string name="connection_lost">Connection lost</string>
+    <string name="setting_vehicle_notification">Setting up vehicle notification...</string>
+    <string name="notification_setting_failed">Notification setting failed</string>
+    <string name="necessary_characteristic_not_found">Required characteristics not found</string>
+    <string name="indication_start_failed">Indication start failed</string>
+    <string name="waiting_vehicle_response">Waiting for vehicle response...</string>
+    <string name="write_failed">Write failed</string>
+    <string name="read_failed">Read failed</string>
+    <string name="sending_pairing_request_to_vehicle">Sending pairing request to vehicle...</string>
+    <string name="response_length_not_enough">Response data length insufficient</string>
+    <string name="vehicle_response_processing">Received vehicle response, processing...</string>
+    <string name="please_click_keycard_on_vehicle">Please tap key card on vehicle reader</string>
+    <string name="keycard_confirmation_success">Key card confirmed successfully</string>
+    
+    <!-- PairCarActivity strings -->
+    <string name="bluetooth_scan_failed">Bluetooth scan failed</string>
+    <string name="device_does_not_support_bluetooth">Device does not support Bluetooth</string>
+    <string name="please_enable_bluetooth">Please enable Bluetooth</string>
+    <string name="device_does_not_support_ble">Device does not support BLE</string>
+    <string name="missing_bluetooth_permission">Missing Bluetooth permission</string>
+    <string name="no_tesla_vehicles_found">No Tesla vehicles found</string>
+    <string name="found_tesla_vehicles">Found %1$d Tesla vehicles</string>
+    <string name="rescanning_tesla_vehicles">Rescanning for Tesla vehicles...</string>
+    <string name="pairing_cancelled">Pairing cancelled</string>
+    <string name="pairing_completed_returning">Pairing completed, returning to MainActivity</string>
+    <string name="pairing_interrupted">Pairing interrupted</string>
+    <string name="user_interrupted_pairing">User interrupted pairing process</string>
+    
+    <!-- MainActivity strings -->
+    <string name="permission_not_allowed">Permission not allowed %1$s</string>
+    <string name="vehicle_pairing_successful">Vehicle pairing successful!</string>
+    <string name="loading_vehicles_failed">Failed to load vehicle data</string>
+    <string name="reloading_vehicle_list">Reloading vehicle list</string>
+    <string name="vehicle_list_reload_complete">Vehicle list reload complete, total %1$d vehicles</string>
+    <string name="service_not_connected">Service not connected</string>
+    <string name="no_selected_vehicle">No selected vehicle</string>
+    <string name="vehicle_not_ready">Vehicle not ready to receive commands</string>
+    <string name="vehicle_not_connected">Vehicle not connected</string>
+    <string name="lock_command_sent">Lock command sent</string>
+    <string name="lock_command_failed">Lock command failed</string>
+    <string name="unlock_command_sent">Unlock command sent</string>
+    <string name="unlock_command_failed">Unlock command failed</string>
+    <string name="open_frunk_command_sent">Open frunk command sent</string>
+    <string name="open_frunk_command_failed">Open frunk command failed</string>
+    <string name="open_trunk_command_sent">Open trunk command sent</string>
+    <string name="open_trunk_command_failed">Open trunk command failed</string>
+    <string name="flash_lights_command_sent">Flash lights command sent</string>
+    <string name="flash_lights_command_failed">Flash lights command failed</string>
+    <string name="wake_command_sent">Wake command sent</string>
+    <string name="wake_command_failed">Wake command failed</string>
+    <string name="status_query_command_sent">Status query command sent</string>
+    <string name="status_query_command_failed">Status query command failed</string>
+    <string name="keystore_initialization_failed">Keystore initialization failed</string>
+    <string name="keypair_generation_failed">Keypair generation failed</string>
+    
+    <!-- BLE Service strings -->
+    <string name="bluetooth_not_available_service">Bluetooth not available</string>
+    <string name="device_not_found_service">Device not found</string>
+    <string name="permission_error_service">Permission error</string>
+    <string name="connection_failed">Connection failed: %1$s</string>
+    <string name="vehicle_error">Vehicle error: %1$s</string>
+    
+    <!-- Connection Status strings -->
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_connecting">Connecting...</string>
+    <string name="status_connected">Connected</string>
+    <string name="status_establishing_session">Establishing session...</string>
+    <string name="status_ready">Ready</string>
+    <string name="status_error">Error</string>
+    
+    <!-- Vehicle Operations strings -->
+    <string name="operation_lock">Lock</string>
+    <string name="operation_unlock">Unlock</string>
+    <string name="operation_open_frunk">Open Frunk</string>
+    <string name="operation_open_trunk">Open Trunk</string>
+    <string name="operation_flash_lights">Flash Lights</string>
+    <string name="operation_wake_vehicle">Wake Vehicle</string>
+    <string name="operation_get_status">Get Status</string>
+    
+    <!-- Notification strings -->
+    <string name="notification_channel_name">Tesla BLE Service</string>
+    <string name="notification_channel_description">Tesla BLE connection service</string>
+    <string name="notification_title">Tesla Key</string>
+    <string name="notification_text_preparing">Preparing to connect vehicle</string>
+    <string name="notification_text_stopped">Stopped</string>
+    
+    <!-- Ongoing Activity strings -->
+    <string name="ongoing_activity_preparing">Preparing</string>
+    <string name="ongoing_activity_connecting">Connecting</string>
+    <string name="ongoing_activity_connected">Connected</string>
+    <string name="ongoing_activity_establishing">Establishing</string>
+    <string name="ongoing_activity_ready">Ready</string>
+    <string name="ongoing_activity_error">Error</string>
+    <string name="ongoing_activity_disconnected">Disconnected</string>
+    <string name="clear_service_callback_error">Error clearing service callback</string>
+    <string name="unbind_service_error">Error unbinding service</string>
+    <string name="service_error_clearing_callback">Error clearing service callback</string>
+    <string name="vehicle_pairing_success_msg">Vehicle pairing successful!</string>
+    <string name="loading_cars_from_database">Loaded %1$d cars from database</string>
+    <string name="loading_vehicles_data_failed">Failed to load vehicle data</string>
+    <string name="pairing_success_return_reload">Pairing success return, reloading vehicle list</string>
+    <string name="reloading_car_list">Reloading vehicle list</string>
+    <string name="car_list_reload_complete">Vehicle list reload complete, total %1$d vehicles</string>
+    <string name="switch_to_vehicle">Switch to vehicle: %1$s (%2$s)</string>
+    <string name="switch_to_add_vehicle_page">Switch to add vehicle page</string>
+    <string name="activity_destroyed_skip_ui_update">Activity destroyed, skip UI update</string>
+    <string name="connection_status_ui_update_error">Error updating connection status UI</string>
+    <string name="activity_destroyed_skip_vehicle_status_update">Activity destroyed, skip vehicle status update</string>
+    <string name="vehicle_status_ui_update_error">Error updating vehicle status UI</string>
+    <string name="bind_ble_service_result">Bind BLE service result: %1$b</string>
+    <string name="bind_ble_service_error">Error binding BLE service</string>
+    <string name="ble_service_connected">BLE service connected</string>
+    <string name="service_connection_handling_error">Error handling service connection</string>
+    <string name="ble_service_disconnected">BLE service disconnected</string>
+    <string name="ble_service_binding_died">BLE service binding died</string>
+    <string name="ble_service_null_binding">BLE service returned null binding</string>
+    <string name="vehicle_connected">Vehicle connected: %1$s</string>
+    <string name="vehicle_disconnected">Vehicle disconnected: %1$s</string>
+    <string name="session_established">Session established: %1$s, domain: %2$s</string>
+    <string name="session_ready">Ready</string>
+    <string name="session_failed">Session failed: %1$s, domain: %2$s, error: %3$s</string>
+    <string name="connection_failed_status">Connection failed</string>
+    <string name="command_response_received">Command response received: %1$s</string>
+    <string name="vehicle_status_received">Vehicle status received: %1$s, locked: %2$b</string>
+    <string name="vehicle_error_msg">Vehicle error: %1$s, error: %2$s</string>
+    <string name="error_prefix">Error: %1$s</string>
+    <string name="vehicle_error_toast">Vehicle error: %1$s</string>
+    <string name="connection_status_changed">Connection status changed: %1$s -> %2$s</string>
+    <string name="status_not_connected">Not connected</string>
+    <string name="status_connecting_dots">Connecting...</string>
+    <string name="status_connected_simple">Connected</string>
+    <string name="status_establishing_session_dots">Establishing session...</string>
+    <string name="status_ready_simple">Ready</string>
+    <string name="status_connection_error">Connection error</string>
+    <string name="vehicle_operation_result">Vehicle operation result: %1$s -> %2$s: %3$s</string>
+    <string name="operation_success">Success</string>
+    <string name="operation_failure">Failure</string>
+    <string name="operation_lock_chinese">Lock</string>
+    <string name="operation_unlock_chinese">Unlock</string>
+    <string name="operation_open_frunk_chinese">Open frunk</string>
+    <string name="operation_open_trunk_chinese">Open trunk</string>
+    <string name="operation_flash_lights_chinese">Flash lights</string>
+    <string name="operation_wake_vehicle_chinese">Wake vehicle</string>
+    <string name="operation_get_status_chinese">Get status</string>
+    <string name="keystore_init_failed_toast">Keystore initialization failed</string>
+    <string name="keypair_gen_failed_toast">Keypair generation failed</string>
+    <string name="frunk_operation">Frunk operation: %1$s</string>
+    <string name="service_not_connected_toast">Service not connected</string>
+    <string name="lock_unlock_operation">Lock/unlock operation: %1$s, current status: %2$s</string>
+    <string name="car_locked">Locked</string>
+    <string name="car_unlocked">Unlocked</string>
+    <string name="trunk_operation">Trunk operation: %1$s</string>
+    <string name="frunk_long_press_required">Frunk requires 3-second long press to open</string>
+    <string name="frunk_long_press_in_progress">Frunk long press in progress...please keep holding</string>
+    <string name="frunk_long_press_completed">Long press completed, opening frunk</string>
+    <string name="edit_vehicle_name">Edit Vehicle Name</string>
+    <string name="enter_new_vehicle_name">Please enter new vehicle name</string>
+    <string name="vehicle_name_updated">Vehicle name updated</string>
+    <string name="vehicle_name_update_failed">Vehicle name update failed</string>
+    <string name="delete_vehicle">Delete Vehicle</string>
+    <string name="delete_vehicle_confirmation">Are you sure you want to delete vehicle \"%1$s\"? This action cannot be undone.</string>
+    <string name="vehicle_deleted">Vehicle deleted</string>
+    <string name="vehicle_delete_failed">Vehicle deletion failed</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="ok">OK</string>
+
+    <!-- Additional strings found in Java files -->
+    <string name="ble_not_available">Bluetooth LE not available</string>
+    <string name="ble_scanner_not_available">LE scanner not available</string>
+    <string name="scanning">Scanning</string>
+    <string name="gatt_connection_failed">GATT connection failed</string>
+    <string name="tesla_vcsec_service_missing">Tesla VCSEC service not found</string>
+    <string name="required_characteristics_missing">Required characteristics not found</string>
+    <string name="permissions_required">Permissions required</string>
+    <string name="some_functions_limited">Some functions may be limited</string>
+    <string name="app_functions_limited">App functions may be limited</string>
+    <string name="permissions_denied_title">Permissions Required</string>
+    <string name="permissions_denied_message">This app requires Bluetooth and location permissions to work properly. Please grant permissions in Settings.</string>
+    <string name="retry_permissions">Retry</string>
+    <string name="no_vehicle_selected">No vehicle selected</string>
+    <string name="vehicle_ready_commands">Vehicle not ready to receive commands</string>
+    <string name="lock_command_sent_msg">Lock command sent</string>
+    <string name="lock_command_send_failed">Lock command send failed</string>
+    <string name="unlock_command_sent_msg">Unlock command sent</string>
+    <string name="unlock_command_send_failed">Unlock command send failed</string>
+    <string name="open_frunk_command_sent_msg">Open frunk command sent</string>
+    <string name="open_frunk_command_send_failed">Open frunk command send failed</string>
+    <string name="open_trunk_command_sent_msg">Open trunk command sent</string>
+    <string name="open_trunk_command_send_failed">Open trunk command send failed</string>
+    <string name="flash_lights_command_sent_msg">Flash lights command sent</string>
+    <string name="flash_lights_command_send_failed">Flash lights command send failed</string>
+    <string name="wake_vehicle_command_sent">Wake vehicle command sent</string>
+    <string name="wake_vehicle_command_send_failed">Wake vehicle command send failed</string>
+    <string name="frunk_long_press_cancelled">Long press cancelled, frunk not opened</string>
+    
+    <!-- BLE Service additional strings -->
+    <string name="gatt_connection_creation_failed">GATT connection creation failed</string>
+    <string name="permission_error_connection">Permission error</string>
+    <string name="direct_connection_failed">Direct connection failed: %1$s</string>
+    <string name="data_processing_failed">Data processing failed: %1$s</string>
+    <string name="response_processing_failed_detail">Response processing failed: %1$s</string>
+    <string name="session_info_missing">Session Info missing in response</string>
+</resources>

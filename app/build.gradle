@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.plugin.compose'
+}
+
+android {
+    namespace 'li.power.app.wearos.teslakeywearble'
+    compileSdk 35
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+
+    defaultConfig {
+        applicationId "li.power.app.wearos.teslakeywearble"
+        minSdk 31
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+    buildFeatures {
+        compose true
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'com.google.android.support:wearable:2.9.0'
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.0'
+    implementation 'androidx.wear:wear:1.3.0'
+    implementation 'androidx.activity:activity:1.7.2'
+    implementation 'androidx.core:core-splashscreen:1.0.1'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    
+    // Ongoing Activity API for Wear OS
+    implementation 'androidx.wear:wear-ongoing:1.0.0'
+    
+    // Wearable Data Layer API
+    implementation 'com.google.android.gms:play-services-wearable:18.1.0'
+    
+    // Protocol Buffers
+    implementation 'com.google.protobuf:protobuf-java:4.31.1'
+    implementation 'com.google.protobuf:protobuf-java-util:4.31.1'
+    
+    // BouncyCastle 加密庫
+    implementation 'org.bouncycastle:bcprov-jdk15on:1.70'
+    implementation 'org.bouncycastle:bcpkix-jdk15on:1.70'
+    
+    // 其他工具庫
+    implementation 'commons-codec:commons-codec:1.15'
+    
+    compileOnly 'com.google.android.wearable:wearable:2.9.0'
+}

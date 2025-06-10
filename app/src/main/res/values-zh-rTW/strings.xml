@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">特斯拉鑰匙穿戴裝置</string>
+    <string name="hello_world">來自方形世界，\n你好，%1$s！</string>
+
+    <string name="keystoreFailed">金鑰庫初始化失敗。</string>
+    <string name="keypairFailed">金鑰對產生失敗。</string>
+    
+    <!-- VCSECPairingService strings -->
+    <string name="pairing_already_in_progress">配對已在進行中</string>
+    <string name="bluetooth_not_available">藍牙不可用</string>
+    <string name="device_not_found">找不到裝置</string>
+    <string name="permission_error">權限錯誤</string>
+    <string name="connecting_to_vehicle">正在連線到車輛...</string>
+    <string name="discovering_services">正在發現服務...</string>
+    <string name="generating_public_key">正在產生公開金鑰...</string>
+    <string name="creating_pairing_request">正在建立配對請求...</string>
+    <string name="sending_pairing_request">正在傳送配對請求到車輛...</string>
+    <string name="waiting_for_vehicle_response">等待車輛回應...</string>
+    <string name="setting_up_vehicle_notification">正在設定車輛通知...</string>
+    <string name="starting_vcsec_handshake">正在開始VCSEC握手...</string>
+    <string name="please_tap_key_card">請在車輛讀卡機上感應鑰匙卡</string>
+    <string name="key_card_confirmed">鑰匙卡確認成功</string>
+    <string name="pairing_success_completed">配對成功完成</string>
+    <string name="write_characteristic_failed">寫入特性失敗</string>
+    <string name="read_characteristic_failed">讀取特性失敗</string>
+    <string name="connection_disconnected">連線中斷</string>
+    <string name="service_discovery_failed">服務發現失敗</string>
+    <string name="tesla_vcsec_service_not_found">找不到特斯拉VCSEC服務</string>
+    <string name="required_characteristics_not_found">找不到必要的特性</string>
+    <string name="notification_setup_failed">通知設定失敗</string>
+    <string name="descriptor_write_failed">描述符寫入失敗</string>
+    <string name="indication_activation_failed">指示啟動失敗</string>
+    <string name="insufficient_response_data">回應資料不足</string>
+    <string name="response_length_mismatch">回應資料長度不符</string>
+    <string name="response_processing_failed">回應處理失敗：%1$s</string>
+    <string name="key_processing_error">金鑰處理錯誤：%1$s</string>
+    <string name="command_execution_failed">指令執行失敗：%1$s</string>
+    <string name="pairing_stopped">配對過程已停止</string>
+    <string name="wakelock_acquired">已取得喚醒鎖定，防止螢幕變暗</string>
+    <string name="wakelock_released">已釋放喚醒鎖定，允許螢幕變暗</string>
+    <string name="wakelock_acquire_failed">取得喚醒鎖定失敗</string>
+    <string name="wakelock_release_failed">釋放喚醒鎖定失敗</string>
+    <string name="service_discovery_success">正在發現服務...</string>
+    <string name="connection_lost">連線中斷</string>
+    <string name="setting_vehicle_notification">正在設定車輛通知...</string>
+    <string name="notification_setting_failed">通知設定失敗</string>
+    <string name="necessary_characteristic_not_found">找不到必要的特性</string>
+    <string name="indication_start_failed">指示啟動失敗</string>
+    <string name="waiting_vehicle_response">等待車輛回應...</string>
+    <string name="write_failed">寫入失敗</string>
+    <string name="read_failed">讀取失敗</string>
+    <string name="sending_pairing_request_to_vehicle">正在傳送配對請求到車輛...</string>
+    <string name="response_length_not_enough">回應資料長度不足</string>
+    <string name="vehicle_response_processing">收到車輛回應，正在處理...</string>
+    <string name="please_click_keycard_on_vehicle">請在車輛讀卡機上感應鑰匙卡</string>
+    <string name="keycard_confirmation_success">鑰匙卡確認成功</string>
+    
+    <!-- PairCarActivity strings -->
+    <string name="bluetooth_scan_failed">藍牙掃描失敗</string>
+    <string name="device_does_not_support_bluetooth">裝置不支援藍牙</string>
+    <string name="please_enable_bluetooth">請開啟藍牙</string>
+    <string name="device_does_not_support_ble">裝置不支援低功耗藍牙</string>
+    <string name="missing_bluetooth_permission">缺少藍牙權限</string>
+    <string name="no_tesla_vehicles_found">未找到特斯拉車輛</string>
+    <string name="found_tesla_vehicles">找到%1$d輛特斯拉車輛</string>
+    <string name="rescanning_tesla_vehicles">重新掃描特斯拉車輛...</string>
+    <string name="pairing_cancelled">配對已取消</string>
+    <string name="pairing_completed_returning">配對完成，返回主畫面</string>
+    <string name="pairing_interrupted">配對已中斷</string>
+    <string name="user_interrupted_pairing">使用者中斷配對過程</string>
+    
+    <!-- MainActivity strings -->
+    <string name="permission_not_allowed">權限未允許 %1$s</string>
+    <string name="vehicle_pairing_successful">車輛配對成功！</string>
+    <string name="loading_vehicles_failed">載入車輛資料失敗</string>
+    <string name="reloading_vehicle_list">重新載入車輛清單</string>
+    <string name="vehicle_list_reload_complete">車輛清單重新載入完成，共%1$d輛車</string>
+    <string name="service_not_connected">服務未連線</string>
+    <string name="no_selected_vehicle">未選擇車輛</string>
+    <string name="vehicle_not_ready">車輛尚未準備好接收指令</string>
+    <string name="vehicle_not_connected">車輛未連線</string>
+    <string name="lock_command_sent">鎖車指令已傳送</string>
+    <string name="lock_command_failed">鎖車指令失敗</string>
+    <string name="unlock_command_sent">解鎖指令已傳送</string>
+    <string name="unlock_command_failed">解鎖指令失敗</string>
+    <string name="open_frunk_command_sent">開啟前車廂指令已傳送</string>
+    <string name="open_frunk_command_failed">開啟前車廂指令失敗</string>
+    <string name="open_trunk_command_sent">開啟後車廂指令已傳送</string>
+    <string name="open_trunk_command_failed">開啟後車廂指令失敗</string>
+    <string name="flash_lights_command_sent">閃爍車燈指令已傳送</string>
+    <string name="flash_lights_command_failed">閃爍車燈指令失敗</string>
+    <string name="wake_command_sent">喚醒指令已傳送</string>
+    <string name="wake_command_failed">喚醒指令失敗</string>
+    <string name="status_query_command_sent">狀態查詢指令已傳送</string>
+    <string name="status_query_command_failed">狀態查詢指令失敗</string>
+    <string name="keystore_initialization_failed">金鑰庫初始化失敗</string>
+    <string name="keypair_generation_failed">金鑰對產生失敗</string>
+    
+    <!-- BLE Service strings -->
+    <string name="bluetooth_not_available_service">藍牙不可用</string>
+    <string name="device_not_found_service">找不到裝置</string>
+    <string name="permission_error_service">權限錯誤</string>
+    <string name="connection_failed">連線失敗：%1$s</string>
+    <string name="vehicle_error">車輛錯誤：%1$s</string>
+    
+    <!-- Connection Status strings -->
+    <string name="status_disconnected">未連線</string>
+    <string name="status_connecting">連線中...</string>
+    <string name="status_connected">已連線</string>
+    <string name="status_establishing_session">建立連線階段...</string>
+    <string name="status_ready">就緒</string>
+    <string name="status_error">錯誤</string>
+    
+    <!-- Vehicle Operations strings -->
+    <string name="operation_lock">鎖車</string>
+    <string name="operation_unlock">解鎖</string>
+    <string name="operation_open_frunk">開啟前車廂</string>
+    <string name="operation_open_trunk">開啟後車廂</string>
+    <string name="operation_flash_lights">閃爍車燈</string>
+    <string name="operation_wake_vehicle">喚醒車輛</string>
+    <string name="operation_get_status">取得狀態</string>
+    
+    <!-- Notification strings -->
+    <string name="notification_channel_name">特斯拉藍牙服務</string>
+    <string name="notification_channel_description">特斯拉藍牙連線服務</string>
+    <string name="notification_title">特斯拉鑰匙</string>
+    <string name="notification_text_preparing">準備連線車輛</string>
+    <string name="notification_text_stopped">已停止</string>
+    
+    <!-- Ongoing Activity strings -->
+    <string name="ongoing_activity_preparing">準備中</string>
+    <string name="ongoing_activity_connecting">連線中</string>
+    <string name="ongoing_activity_connected">已連線</string>
+    <string name="ongoing_activity_establishing">建立中</string>
+    <string name="ongoing_activity_ready">就緒</string>
+    <string name="ongoing_activity_error">錯誤</string>
+    <string name="ongoing_activity_disconnected">未連線</string>
+    <string name="clear_service_callback_error">清除服務回調時發生錯誤</string>
+    <string name="unbind_service_error">解綁服務時發生錯誤</string>
+    <string name="service_error_clearing_callback">清除服務回調時發生錯誤</string>
+    <string name="vehicle_pairing_success_msg">車輛配對成功！</string>
+    <string name="loading_cars_from_database">從資料庫載入了%1$d輛車</string>
+    <string name="loading_vehicles_data_failed">載入車輛資料失敗</string>
+    <string name="pairing_success_return_reload">配對成功返回，重新載入車輛清單</string>
+    <string name="reloading_car_list">重新載入車輛清單</string>
+    <string name="car_list_reload_complete">車輛清單重新載入完成，總共%1$d輛車</string>
+    <string name="switch_to_vehicle">切換到車輛：%1$s (%2$s)</string>
+    <string name="switch_to_add_vehicle_page">切換到新增車輛頁面</string>
+    <string name="activity_destroyed_skip_ui_update">Activity已銷毀，跳過UI更新</string>
+    <string name="connection_status_ui_update_error">更新連線狀態UI時發生錯誤</string>
+    <string name="activity_destroyed_skip_vehicle_status_update">Activity已銷毀，跳過車輛狀態更新</string>
+    <string name="vehicle_status_ui_update_error">更新車輛狀態UI時發生錯誤</string>
+    <string name="bind_ble_service_result">綁定BLE服務結果：%1$b</string>
+    <string name="bind_ble_service_error">綁定BLE服務時發生錯誤</string>
+    <string name="ble_service_connected">BLE服務已連線</string>
+    <string name="service_connection_handling_error">處理服務連線時發生錯誤</string>
+    <string name="ble_service_disconnected">BLE服務已斷線</string>
+    <string name="ble_service_binding_died">BLE服務綁定死亡</string>
+    <string name="ble_service_null_binding">BLE服務返回空綁定</string>
+    <string name="vehicle_connected">車輛已連線：%1$s</string>
+    <string name="vehicle_disconnected">車輛已斷線：%1$s</string>
+    <string name="session_established">Session已建立：%1$s，域：%2$s</string>
+    <string name="session_ready">已就緒</string>
+    <string name="session_failed">Session失敗：%1$s，域：%2$s，錯誤：%3$s</string>
+    <string name="connection_failed_status">連線失敗</string>
+    <string name="command_response_received">收到指令回應：%1$s</string>
+    <string name="vehicle_status_received">收到車輛狀態：%1$s，鎖定：%2$b</string>
+    <string name="vehicle_error_msg">車輛錯誤：%1$s，錯誤：%2$s</string>
+    <string name="error_prefix">錯誤：%1$s</string>
+    <string name="vehicle_error_toast">車輛錯誤：%1$s</string>
+    <string name="connection_status_changed">連線狀態變更：%1$s -> %2$s</string>
+    <string name="status_not_connected">未連線</string>
+    <string name="status_connecting_dots">連線中...</string>
+    <string name="status_connected_simple">已連線</string>
+    <string name="status_establishing_session_dots">建立Session...</string>
+    <string name="status_ready_simple">已就緒</string>
+    <string name="status_connection_error">連線錯誤</string>
+    <string name="vehicle_operation_result">車輛操作結果：%1$s -> %2$s：%3$s</string>
+    <string name="operation_success">成功</string>
+    <string name="operation_failure">失敗</string>
+    <string name="operation_lock_chinese">鎖車</string>
+    <string name="operation_unlock_chinese">開鎖</string>
+    <string name="operation_open_frunk_chinese">開啟前車廂</string>
+    <string name="operation_open_trunk_chinese">開啟後車廂</string>
+    <string name="operation_flash_lights_chinese">閃爍車燈</string>
+    <string name="operation_wake_vehicle_chinese">喚醒車輛</string>
+    <string name="operation_get_status_chinese">取得狀態</string>
+    <string name="keystore_init_failed_toast">金鑰庫初始化失敗</string>
+    <string name="keypair_gen_failed_toast">金鑰對產生失敗</string>
+    <string name="frunk_operation">前車廂操作：%1$s</string>
+    <string name="service_not_connected_toast">服務未連線</string>
+    <string name="lock_unlock_operation">鎖定/解鎖操作：%1$s，目前狀態：%2$s</string>
+    <string name="car_locked">已鎖定</string>
+    <string name="car_unlocked">已解鎖</string>
+    <string name="trunk_operation">後車廂操作：%1$s</string>
+    <string name="frunk_long_press_required">前備箱需要長按3秒才能開啟</string>
+    <string name="frunk_long_press_in_progress">正在長按前備箱按鈕...請繼續按住</string>
+    <string name="frunk_long_press_completed">長按完成，正在開啟前備箱</string>
+    <string name="frunk_long_press_cancelled">長按取消，前備箱未開啟</string>
+    <string name="edit_vehicle_name">編輯車輛名稱</string>
+    <string name="enter_new_vehicle_name">請輸入新的車輛名稱</string>
+    <string name="vehicle_name_updated">車輛名稱已更新</string>
+    <string name="vehicle_name_update_failed">車輛名稱更新失敗</string>
+    <string name="delete_vehicle">刪除車輛</string>
+    <string name="delete_vehicle_confirmation">確定要刪除車輛「%1$s」嗎？此操作無法復原。</string>
+    <string name="vehicle_deleted">車輛已刪除</string>
+    <string name="vehicle_delete_failed">車輛刪除失敗</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">確認</string>
+    <string name="ok">確定</string>
+
+    <!-- Additional strings found in Java files -->
+    <string name="ble_not_available">藍牙LE不可用</string>
+    <string name="ble_scanner_not_available">LE掃描器不可用</string>
+    <string name="scanning">掃描中</string>
+    <string name="gatt_connection_failed">GATT連線失敗</string>
+    <string name="tesla_vcsec_service_missing">找不到Tesla VCSEC服務</string>
+    <string name="required_characteristics_missing">找不到必要的特性</string>
+    <string name="permissions_required">需要權限</string>
+    <string name="some_functions_limited">部分功能可能受限</string>
+    <string name="app_functions_limited">應用功能可能受限</string>
+    <string name="permissions_denied_title">需要權限</string>
+    <string name="permissions_denied_message">應用需要藍芽和位置權限才能正常工作。請在設定中手動授予權限。</string>
+    <string name="retry_permissions">重新請求</string>
+    <string name="no_vehicle_selected">沒有選擇車輛</string>
+    <string name="vehicle_ready_commands">車輛尚未準備好接收命令</string>
+    <string name="lock_command_sent_msg">鎖車命令已發送</string>
+    <string name="lock_command_send_failed">鎖車命令發送失敗</string>
+    <string name="unlock_command_sent_msg">解鎖命令已發送</string>
+    <string name="unlock_command_send_failed">解鎖命令發送失敗</string>
+    <string name="open_frunk_command_sent_msg">開啟前備箱命令已發送</string>
+    <string name="open_frunk_command_send_failed">開啟前備箱命令發送失敗</string>
+    <string name="open_trunk_command_sent_msg">開啟後備箱命令已發送</string>
+    <string name="open_trunk_command_send_failed">開啟後備箱命令發送失敗</string>
+    <string name="flash_lights_command_sent_msg">閃燈命令已發送</string>
+    <string name="flash_lights_command_send_failed">閃燈命令發送失敗</string>
+    <string name="wake_vehicle_command_sent">喚醒車輛命令已發送</string>
+    <string name="wake_vehicle_command_send_failed">喚醒車輛命令發送失敗</string>
+    <string name="tesla_vehicle_key">特斯拉車輛鑰匙</string>
+    <string name="preparing_connect_vehicle">準備連接車輛</string>
+    
+    <!-- BLE Service additional strings -->
+    <string name="gatt_connection_creation_failed">GATT連線建立失敗</string>
+    <string name="permission_error_connection">權限錯誤</string>
+    <string name="direct_connection_failed">直接連線失敗：%1$s</string>
+    <string name="data_processing_failed">數據處理失敗：%1$s</string>
+    <string name="response_processing_failed_detail">回應處理失敗：%1$s</string>
+    <string name="session_info_missing">回應中沒有Session Info</string>
+</resources> 

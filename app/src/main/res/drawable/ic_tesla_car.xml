@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- 車身 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M5,11 L19,11 L19,16 L5,16 Z"/>
+    
+    <!-- 車頂 -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M7,8 L17,8 L17,11 L7,11 Z"/>
+    
+    <!-- 前擋風玻璃 -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M8,8 L9,11 L15,11 L16,8 Z"/>
+    
+    <!-- 車輪 -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M8,16 C9.1,16 9.5,15.1 9.5,14.5 C9.5,13.9 9.1,13 8,13 C6.9,13 6.5,13.9 6.5,14.5 C6.5,15.1 6.9,16 8,16 Z"/>
+    <path
+        android:fillColor="#424242"
+        android:pathData="M16,16 C17.1,16 17.5,15.1 17.5,14.5 C17.5,13.9 17.1,13 16,13 C14.9,13 14.5,13.9 14.5,14.5 C14.5,15.1 14.9,16 16,16 Z"/>
+    
+    <!-- 車燈 -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M6,13 C6.28,13 6.5,12.78 6.5,12.5 C6.5,12.22 6.28,12 6,12 C5.72,12 5.5,12.22 5.5,12.5 C5.5,12.78 5.72,13 6,13 Z"/>
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M18,13 C18.28,13 18.5,12.78 18.5,12.5 C18.5,12.22 18.28,12 18,12 C17.72,12 17.5,12.22 17.5,12.5 C17.5,12.78 17.72,13 18,13 Z"/>
+    
+    <!-- Tesla T標誌 -->
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M11.5,6 L12.5,6 L12.5,4.5 L11.5,4.5 Z"/>
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M11,4.5 L13,4.5 L13,4 L11,4 Z"/>
+</vector> 

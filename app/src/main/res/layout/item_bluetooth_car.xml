@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/item_car_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginBottom="8dp">
+
+    <!-- 車輛圖示 -->
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_tesla_car"
+        android:layout_marginEnd="12dp"
+        android:layout_gravity="center_vertical"/>
+
+    <!-- 車輛信息 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- 車輛名稱 -->
+        <TextView
+            android:id="@+id/tv_car_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tesla Model S"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <!-- 藍芽地址 -->
+        <TextView
+            android:id="@+id/tv_bluetooth_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XX:XX:XX:XX:XX:XX"
+            android:textSize="10sp"
+            android:textColor="#CCCCCC"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+    <!-- 信號強度 -->
+    <TextView
+        android:id="@+id/tv_signal_strength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-45dBm"
+        android:textSize="10sp"
+        android:textColor="#4CAF50"
+        android:layout_gravity="center_vertical"/>
+
+</LinearLayout> 

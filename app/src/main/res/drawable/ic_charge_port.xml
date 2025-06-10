@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- 充電口外框 -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M7,8 L17,8 L17,16 L7,16 Z"/>
+    
+    <!-- 充電口內部 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M9,10 L15,10 L15,14 L9,14 Z"/>
+    
+    <!-- 充電插頭 -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M12,12 C12.55,12 13,11.55 13,11 C13,10.45 12.55,10 12,10 C11.45,10 11,10.45 11,11 C11,11.55 11.45,12 12,12 Z"/>
+    
+    <!-- 電流指示 -->
+    <path
+        android:strokeColor="#FFEB3B"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M10,6 L12,4 L14,6"/>
+    <path
+        android:strokeColor="#FFEB3B"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M10,18 L12,20 L14,18"/>
+    
+    <!-- 充電線 -->
+    <path
+        android:strokeColor="#757575"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M12,16 Q12,18 14,18 Q16,18 16,16"/>
+</vector> 

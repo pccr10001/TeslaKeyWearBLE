@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/dialog_background"
+    android:gravity="center">
+
+    <!-- Tesla圖示 -->
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_tesla_car"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 車輛名稱 -->
+    <TextView
+        android:id="@+id/tv_car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tesla Model S"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"/>
+
+    <!-- 配對狀態 -->
+    <TextView
+        android:id="@+id/tv_pairing_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在連接到車輛..."
+        android:textSize="12sp"
+        android:textColor="#CCCCCC"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
+
+    <!-- 鑰匙卡圖標 -->
+    <ImageView
+        android:id="@+id/iv_key_card"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_key_card"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
+
+    <!-- 用戶指示文字 -->
+    <TextView
+        android:id="@+id/tv_instruction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="請在車輛中控螢幕上點擊\n手機鑰匙卡圖標"
+        android:textSize="11sp"
+        android:textColor="#FFD700"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <!-- 進度條 -->
+    <ProgressBar
+        android:id="@+id/progress_pairing"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="20dp"
+        android:indeterminateTint="#FFFFFF"/>
+
+    <!-- 取消按鈕 -->
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textSize="12sp"
+        android:background="@drawable/btn_background"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        android:minWidth="80dp"/>
+
+</LinearLayout> 
