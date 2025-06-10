@@ -41,6 +41,10 @@ public class CarPagerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         this.context = context;
         this.cars = cars;
         this.listener = listener;
+
+        // Enable stable IDs to avoid unnecessary view recreation which may cause
+        // flickering when notifyItemChanged is called frequently
+        setHasStableIds(true);
     }
     
     /**
@@ -88,6 +92,16 @@ public class CarPagerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @Override
     public int getItemCount() {
         return cars.size() + 1; // +1 for add car page
+    }
+
+    @Override
+    public long getItemId(int position) {
+        if (position < cars.size()) {
+            return cars.get(position).getId();
+        } else {
+            // Use a negative ID for the "add car" page
+            return -1;
+        }
     }
     
     class CarViewHolder extends RecyclerView.ViewHolder {
@@ -235,8 +249,10 @@ public class CarPagerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                         longPressExecuted = false;
                         
                         // 立即顯示長按開始提示
+                        int pos = getBindingAdapterPosition();
+                        Car currentCar = (pos != RecyclerView.NO_POSITION) ? cars.get(pos) : car;
                         if (listener instanceof li.power.app.wearos.teslakeywearble.MainActivity) {
-                            ((li.power.app.wearos.teslakeywearble.MainActivity) listener).onFrontTrunkLongPressStarted(car);
+                            ((li.power.app.wearos.teslakeywearble.MainActivity) listener).onFrontTrunkLongPressStarted(currentCar);
                         }
                         
                         // 設置長按完成的回調
@@ -244,8 +260,10 @@ public class CarPagerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                             if (isLongPressing && !longPressExecuted) {
                                 longPressExecuted = true;
                                 // 執行長按操作
+                                int pos = getBindingAdapterPosition();
+                                Car currentCar = (pos != RecyclerView.NO_POSITION) ? cars.get(pos) : car;
                                 if (listener instanceof li.power.app.wearos.teslakeywearble.MainActivity) {
-                                    ((li.power.app.wearos.teslakeywearble.MainActivity) listener).onFrontTrunkLongPress(car);
+                                    ((li.power.app.wearos.teslakeywearble.MainActivity) listener).onFrontTrunkLongPress(currentCar);
                                 }
                             }
                         };
@@ -262,7 +280,9 @@ public class CarPagerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                             if (!longPressExecuted) {
                                 // 長按未完成，顯示短按提示
                                 if (listener != null) {
-                                    listener.onFrontTrunkClick(car);
+                                    int pos = getBindingAdapterPosition();
+                                    Car currentCar = (pos != RecyclerView.NO_POSITION) ? cars.get(pos) : car;
+                                    listener.onFrontTrunkClick(currentCar);
                                 }
                             }
                             
@@ -274,11 +294,19 @@ public class CarPagerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             });
             
             btnLockUnlock.setOnClickListener(v -> {
-                if (listener != null) listener.onLockUnlockClick(car);
+                if (listener != null) {
+                    int pos = getBindingAdapterPosition();
+                    Car currentCar = (pos != RecyclerView.NO_POSITION) ? cars.get(pos) : car;
+                    listener.onLockUnlockClick(currentCar);
+                }
             });
             
             btnRearTrunk.setOnClickListener(v -> {
-                if (listener != null) listener.onRearTrunkClick(car);
+                if (listener != null) {
+                    int pos = getBindingAdapterPosition();
+                    Car currentCar = (pos != RecyclerView.NO_POSITION) ? cars.get(pos) : car;
+                    listener.onRearTrunkClick(currentCar);
+                }
             });
         }
     }

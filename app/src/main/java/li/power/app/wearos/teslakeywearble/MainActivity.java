@@ -74,6 +74,11 @@ public class MainActivity extends Activity implements CarPagerAdapter.OnCarActio
     private LinearLayout pageIndicator;
     private CarPagerAdapter adapter;
     private List<Car> cars;
+
+    // Track last status to reduce redundant UI refreshes
+    private String lastConnectionStatusText = "";
+    private Boolean lastConnected = null;
+    private Boolean lastLocked = null;
     
     // BLE Service
     private BLEService bleService;
@@ -934,13 +939,22 @@ public class MainActivity extends Activity implements CarPagerAdapter.OnCarActio
             Log.d(TAG, "Activity已銷毀，跳過車輛狀態更新");
             return;
         }
-        
+
         if (currentVehicleIndex < cars.size()) {
+            // Skip if status didn't change
+            if (lastConnected != null && lastLocked != null &&
+                    lastConnected == connected && lastLocked == locked) {
+                return;
+            }
+
+            lastConnected = connected;
+            lastLocked = locked;
+
             Car currentCar = cars.get(currentVehicleIndex);
             currentCar.setConnected(connected);
             currentCar.setLocked(locked);
             // 注意：這裡不重置備箱狀態，讓備箱狀態由車輛狀態回調單獨處理
-            
+
             runOnUiThread(() -> {
                 try {
                     if (adapter != null) {
@@ -962,7 +976,14 @@ public class MainActivity extends Activity implements CarPagerAdapter.OnCarActio
             Log.d(TAG, "Activity已銷毀，跳過狀態更新");
             return;
         }
-        
+
+        // Skip if no change
+        if (statusText.equals(lastConnectionStatusText)) {
+            return;
+        }
+
+        lastConnectionStatusText = statusText;
+
         runOnUiThread(() -> {
             try {
                 if (adapter != null) {
